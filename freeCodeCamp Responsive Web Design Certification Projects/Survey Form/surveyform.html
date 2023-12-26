@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the required information</p>
+    <form method="post" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Enter Your Full Name: <input id="name" type="text" placeholder="John Doe" required/></label>
+        <label for="email" id="email-label">Enter Your Email: <input id="email" type="email" placeholder="survey@survery.com"required/></label>
+        <label for="number" id="number-label">Enter Your Phone Number: <input id="number" type="number" min="10" max="12" placeholder="1231231234"/></label>
+      </fieldset>
+      <fieldset>
+        <label id="referrer">How Did You Hear About Us?</label>
+        <select id="dropdown">
+          <option value="">(Select One)</option>
+          <option value="1">From a friend or family member</option>
+          <option value="2">Youtube</option>
+          <option value="3">Instagram</option>
+          <option value="4">Facebook</option>
+          <option value="5">Other</option> 
+        </select>
+        <label id="improvement">What Would You Like To See Improved? (check all that apply)</label> 
+       <label for="Frontend"><input class="inline" type="checkbox" value="1">Front-End Projects</input>
+       </label>
+        <label for="Backend"><input class="inline" type="checkbox" value="2">Back-End Projects</input>
+        </label>
+        <label for="Community">
+        <input class="inline" type="checkbox" value="3">Community Functions</input>
+        </label>
+        <label id="feedback">How Can We Improve Our Program?<textarea id="feedback" rows="3" cols="30" placeholder="Efficiency, Aesthetic, etc..."></textarea>
+      </fieldset>
+      <fieldset>
+        <label>Would You Recommend Our Service To Other People?></label>
+        <label for="Yes"><input id="Yes" type="radio" name="recommendation" value="1" class="inline"/> Definitely!</label>
+        <label for="Maybe"><input id="Maybe" type="radio" name="recommendation" value="2" class="inline"/> Maybe</label>
+        <label for="No"><input id="No" type="radio" name="recommendation" value="3" class="inline"/> No</label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
